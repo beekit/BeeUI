@@ -1,0 +1,188 @@
+@size-cell:128px;  @padding-px: 8px;
+//@size-padding:8px; @size-marggin:2px;
+@line-thin:1px; @line-bold:2px; @line-color:#fff;
+@cell-l-color:#ddd;  @cell-d-color:#aaa;
+@d-gray:#4D4D4D;
+@light-info:#998675; @dark-info:#736357;
+@select-text-lbg:#B3B3B3; @select-text-dbg:#999999;
+@green: #2E8272; @l-green:#45C3AC;@white:#fff;
+@bg-color: #ececec; @footer-bg:#555;
+@light-yellow: #ffa;@bee-yellow: #fc0;
+
+
+* {
+  margin: 0;  padding: 0;
+  font-family: "microsoft yahei";
+  font-size: 14px;
+  list-style: none;
+}
+.black-g{
+background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#E1DCDE), to(#fff));/*谷歌*/
+background: -webkit-gradient(linear, 30% 0%, 0% 100%, from(#fff), to(#E1DCDE));  /* Safari 4-5, Chrome 1-9*/
+background: -ms-linear-gradient(top, #E1DCDE,  #fff);        /* IE 10 */
+background:-moz-linear-gradient(45deg, #E1DCDE,#fff);     /*火狐*/
+background: -o-linear-gradient(top, #fff, #0000ff);  /*Opera 11.10+*/
+} //渐变模块
+
+//================= index.html ==================
+.top-user {
+  width: 100%;
+  height: @size-cell / 3;
+  background-color: #000;//顶条色块
+  background:-moz-linear-gradient(270deg, #555,#000);
+  background:-webkit-linear-gradient(270deg, #555,#000);
+}
+ul {
+  margin-left: 30px;
+}
+ul li{
+  display: block;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 50px;
+  height: @size-cell / 3 - 1;
+  font-size: 18px;
+  line-height: @size-cell / 3 - 1;
+  color: gray;
+  cursor:pointer;
+}
+ul li:hover{
+  color: #ff9c00;
+  font-size: 24px;
+  margin-left: -7px;
+}
+.kinds-active{
+  display: block;
+  float: left;
+  position: relative;
+  width: 60px;
+  height: @size-cell * 0.3;
+  margin: 15px;
+  margin-top: 5px;
+  margin-bottom: 0;
+
+  background-color: @bee-yellow;
+  background:-moz-linear-gradient(270deg, #c50,#fc0,#fc0);
+  border: 1px solid @light-yellow;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0 -5 5px rgb(0,0,0,.3);
+  font-size: 32px;
+  line-height: 20px;
+  color: #000;
+}
+.kinds-active i{
+  margin-left: 15px;
+}
+
+.kinds-active:hover{
+  color: #000;
+  font-size: 32px;
+  margin-left: 15px;
+}
+
+
+.copr{
+  float: right;
+  color: gray;
+  margin-top: -8px;
+  margin-right: 40px;
+  font-size: 32px;
+
+}
+.top-area {
+  width: 100%;
+  height: @size-cell * 1.5;
+  background-color: #fc0;//头部底色
+  border-top: 1px solid @light-yellow;
+
+}
+.screen-width{
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+}
+.display-width {
+  .screen-width;
+  padding-top: @padding-px * 7;
+}
+.site-logo {
+  position: relative;
+  float: left;
+  width: @size-cell / 2  ;
+  height: @size-cell / 1.5 ;
+  margin-left: @size-cell * 1.2;
+  text-align: center;
+  background: url("../image/site-style/cubee-logo-g.svg") no-repeat;
+}//图形logo
+.site-type {
+  position: relative;
+  width: @size-cell * 4 ;
+  height: @size-cell / 2.2;
+  margin-left: @size-cell * 1.8;
+  text-align: center;
+  background: url("../image/site-style/cubee-font.svg") no-repeat;
+}//标准字体
+.slogan{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-left: -@size-cell * 1.2;
+}
+.slogan small{
+  margin-left: 10px;
+  font-size: 12px;
+}
+.bee-font{
+  font-size: 48px;
+  color: #ffff00;
+}
+
+.site-ad {
+  display: none;
+  float: left;
+  width: @size-cell * 1.75;
+  height: auto;
+}
+
+.site-slogan-1 {
+  color: @white;
+  font-size: 48px;
+  text-align: right;
+}
+
+.site-slogan-2 {
+  margin-top: @padding-px * 1.5;
+  margin-left: @padding-px * 2;
+  color: @white;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: left;
+}
+.site-info-1 {
+  color: @white;
+  text-align: right;
+  font-size: 16px;
+}
+.site-info-2 {
+  .site-info-1;
+  font-size: 14px;
+  margin-top: @padding-px - 2;
+  margin-left: @padding-px * 2;
+  text-align: left;
+}
+
+//----------------- 页脚 -------------------
+.footer-part {
+  width: 100%;
+  height: @size-cell * 3;
+  background-color: @footer-bg;
+  margin-top: -180px;
+  border-top:1px solid @light-yellow ;
+  background: url("../image/bg-footer-noise.jpg") repeat;
+//  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))
+//  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url("../images/bg-footer-noise.jpg");
+
+}

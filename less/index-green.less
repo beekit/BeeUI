@@ -1,0 +1,100 @@
+@size-cell:128px;  @padding-px: 8px;
+//@size-padding:8px; @size-marggin:2px;
+@line-thin:1px; @line-bold:2px; @line-color:#fff;
+@cell-l-color:#ddd;  @cell-d-color:#aaa;
+@d-gray:#4D4D4D;
+@light-info:#998675; @dark-info:#736357;
+@select-text-lbg:#B3B3B3; @select-text-dbg:#999999;
+@green: #2E8272; @l-green:#45C3AC;@white:#fff;
+@bg-color: #ececec; @footer-bg:#555;
+
+
+* {
+  margin: 0;  padding: 0;
+  font-family: "microsoft yahei";
+  font-size: 14px;
+}
+
+//================= index.html ==================
+.top-user {
+  width: 100%;
+  height: @size-cell / 2.5;
+  background-color: @green;
+  box-shadow: 0 0 15px gray;
+}
+.site-kinds{
+
+}
+.site-kinds-logo{
+
+}
+.top-area {
+  width: 100%;
+  height: @size-cell * 1.5;
+  background: url("../image/exmple/texture.png") repeat;
+}
+.display-width {
+  margin-left: auto;
+  margin-right: auto;
+  width: @size-cell * 6.25 + @line-bold * 4 + @padding-px * 4;
+  padding-top: @padding-px * 7;
+}
+.site-logo {
+  width: @size-cell / 1.5 ;
+  height: @size-cell / 2 ;
+  float: left;
+  margin-left: @size-cell * 1.2;
+  text-align: center;
+  background: url("../image/cubee-logo.svg") no-repeat;
+}
+.site-logo img {
+  width: @size-cell / 3 ;
+  margin-top: @padding-px * 1.5;
+}
+
+.bee-font{
+  font-size: 48px;
+  color: #ffff00;
+}
+
+.site-ad {
+  float: left;
+  width: @size-cell * 1.75;
+  height: auto;
+}
+
+.site-slogan-1 {
+  color: @white;
+  font-size: 48px;
+  text-align: right;
+}
+
+.site-slogan-2 {
+  margin-top: @padding-px * 1.5;
+  margin-left: @padding-px * 2;
+  color: @white;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: left;
+}
+.site-info-1 {
+  color: @white;
+  text-align: right;
+  font-size: 16px;
+}
+.site-info-2 {
+  .site-info-1;
+  font-size: 14px;
+  margin-top: @padding-px - 2;
+  margin-left: @padding-px * 2;
+  text-align: left;
+}
+
+//----------------- 页脚 -------------------
+.footer-part {
+  width: 100%;
+  height: @size-cell * 3;
+  background-color: @footer-bg;
+  margin-top: -180px;
+  border-top:2px solid #ffff00 ;
+}

@@ -1,0 +1,9 @@
+@size-cell:128px;  @padding-px: 8px;
+//@size-padding:8px; @size-marggin:2px;
+@line-thin:1px; @line-bold:2px; @line-color:#fff;
+@cell-l-color:#ddd;  @cell-d-color:#aaa;
+@d-gray:#4D4D4D;
+@light-info:#998675; @dark-info:#736357;
+@select-text-lbg:#B3B3B3; @select-text-dbg:#999999;
+@green: #2E8272; @l-green:#45C3AC;@white:#fff;
+@bg-color: #ececec; @footer-bg:#ccc;
